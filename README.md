@@ -43,7 +43,7 @@ to move your idea from experiments to extensive production implementations.
 
 Here is the link to the documentation: https://docs.neuron-ai.dev
 
-# How to use this package
+# How to use this project
 
 Download the project on your machine, and open your terminal into the project directory.
 First install the composer dependencies:
