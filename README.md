@@ -40,3 +40,12 @@ to move your idea from experiments to extensive production implementations.
 Here is the link to the documentation: https://docs.neuron-ai.dev
 
 # How to use this package
+
+Download the project on your machine, and open your terminal into the project directory.
+
+To interact with the agent, you can just run the `youtube.php` script:
+
+```
+php .\youtube.php
+```
+
