@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * https://www.youtube.com/watch?v=6qmWm18ewCo
+ *
+ * https://www.youtube.com/watch?v=WmVLcj-XKnM
+ *
+ * https://www.youtube.com/watch?v=aoPcbZEFZZ0
+ */
 
 use App\YouTube\YouTubeAgent;
 use NeuronAI\Chat\Messages\UserMessage;
