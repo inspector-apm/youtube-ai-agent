@@ -5,6 +5,8 @@ It is built using the [Neuron AI](https://github.com/inspector-apm/neuron-ai) pa
 
 > Read the full article: https://inspector.dev/php-ai-agent-summarizing-youtube-videos/
 
+![](youtube-php-ai-agent.png)
+
 # YouTube Agent Use Cases
 Let's explore three real-world contexts where YouTube video summarization can be incredibly helpful.
 
