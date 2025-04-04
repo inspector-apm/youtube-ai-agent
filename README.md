@@ -44,6 +44,11 @@ Here is the link to the documentation: https://docs.neuron-ai.dev
 # How to use this package
 
 Download the project on your machine, and open your terminal into the project directory.
+First install the composer dependencies:
+
+```
+composer install
+```
 
 To interact with the agent, you can just run the `youtube.php` script:
 
