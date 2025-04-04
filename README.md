@@ -58,3 +58,5 @@ To interact with the agent, you can just run the `youtube.php` script:
 php .\youtube.php
 ```
 
+## Full Article
+Here is the link to the article about this implementation: https://inspector.dev/php-ai-agent-summarizing-youtube-videos/
