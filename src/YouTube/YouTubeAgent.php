@@ -38,7 +38,7 @@ class YouTubeAgent extends Agent
             ],
             output: [
                 "Write a summary in a paragraph without using lists. Use just fluent text.",
-                "After the summary add a list of three sentences as the three most important take away from the video.",
+                "After the summary add a list of three sentences as the three most important takeaways from the video.",
             ]
         );
     }
