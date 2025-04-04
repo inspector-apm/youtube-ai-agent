@@ -1,7 +1,7 @@
 # YouTube Agents with Neuron AI PHP framework
 
 This repository contains the PHP implementation of an AI Agents summarizing YouTube videos. 
-It is built using the [Neuron](https://github.com/inspector-apm/neuron-ai) AI package. 
+It is built using the [Neuron AI](https://github.com/inspector-apm/neuron-ai) package. 
 
 # YouTube Agent Use Cases
 Let's explore three real-world contexts where YouTube video summarization can be incredibly helpful.
