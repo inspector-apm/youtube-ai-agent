@@ -52,7 +52,7 @@ First install the composer dependencies:
 composer install
 ```
 
-Rename the .env.example into .env and provide the script with the Anthropic API key and Supadata API key:
+Rename the `.env.example` into `.env` and provide the script with the Anthropic API key and Supadata API key:
 
 ```dotenv
 ANTHROPIC_API_KEY=
