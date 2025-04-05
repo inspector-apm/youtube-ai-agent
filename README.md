@@ -52,11 +52,23 @@ First install the composer dependencies:
 composer install
 ```
 
+Rename the .env.example into .env and provide the script with the Anthropic API key and Supadata API key:
+
+```dotenv
+ANTHROPIC_API_KEY=
+SUPADATA_API_KEY=
+```
+
 To interact with the agent, you can just run the `youtube.php` script:
 
 ```
 php .\youtube.php
 ```
+
+## Supadata.ai
+[Supadata](https://supadata.ai) is built on purpose to help you build better AI products faster.
+
+They provide 100 monthly API requests for free, and you can also retrieve the video transcriptions in many languages.
 
 ## Full Article
 Here is the link to the article about this implementation: https://inspector.dev/php-ai-agent-summarizing-youtube-videos/
