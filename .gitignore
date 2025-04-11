@@ -4,3 +4,4 @@
 .env
 Homestead.yaml
 /.vagrant
+*.chat
