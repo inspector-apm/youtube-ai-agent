@@ -9,7 +9,10 @@
  */
 
 use App\YouTube\YouTubeAgent;
+use Inspector\Configuration;
+use Inspector\Inspector;
 use NeuronAI\Chat\Messages\UserMessage;
+use NeuronAI\Observability\AgentMonitoring;
 
 include __DIR__ . '/../vendor/autoload.php';
 
@@ -20,8 +23,8 @@ $agent = YouTubeAgent::make();
 
 if (!empty($_ENV['INSPECTOR_INGESTION_KEY'])) {
     $agent->observe(
-        new \NeuronAI\Observability\AgentMonitoring(
-            new \Inspector\Inspector(new \Inspector\Configuration($_ENV['INSPECTOR_INGESTION_KEY'])),
+        new AgentMonitoring(
+            new Inspector(new Configuration($_ENV['INSPECTOR_INGESTION_KEY'])),
         )
     );
 }
