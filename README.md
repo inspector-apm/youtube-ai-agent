@@ -52,18 +52,26 @@ First install the composer dependencies:
 composer install
 ```
 
-Rename the `.env.example` into `.env` and provide the script with the Anthropic API key and Supadata API key:
+Rename the `.env.example` into `.env` and provide the script with the Anthropic API key, Supadata API key, 
+and the [Inspector](https://inspector.dev) ingestion key if you want to monitor the agent execution:
 
 ```dotenv
 ANTHROPIC_API_KEY=
 SUPADATA_API_KEY=
+INSPECTOR_INGESTION_KEY=
 ```
 
 To interact with the agent, you can just run the `youtube.php` script:
 
 ```
-php .\youtube.php
+php .\public\youtube.php
 ```
+
+## Inspector.dev
+[Inspector](https://supadata.ai) is a code execution monitoring tool for the PHP ecosystem.
+
+It provides full visibility into the AI Agent execution flow. Learn more on the Neuron documentation:
+https://docs.neuron-ai.dev/advanced/observability
 
 ## Supadata.ai
 [Supadata](https://supadata.ai) is built on purpose to help you build better AI products faster.

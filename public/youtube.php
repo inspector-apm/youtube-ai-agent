@@ -11,7 +11,7 @@
 use App\YouTube\YouTubeAgent;
 use NeuronAI\Chat\Messages\UserMessage;
 
-include __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/../vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
