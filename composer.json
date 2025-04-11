@@ -17,5 +17,8 @@
             "name": "Valerio Barbera",
             "email": "valerio@inspector.dev"
         }
-    ]
+    ],
+    "require-dev": {
+        "laravel/homestead": "^15.0"
+    }
 }
