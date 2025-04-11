@@ -16,7 +16,7 @@ use NeuronAI\Observability\AgentMonitoring;
 
 include __DIR__ . '/../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/..');
 $dotenv->load();
 
 $agent = YouTubeAgent::make();
