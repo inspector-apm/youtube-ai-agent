@@ -29,6 +29,15 @@ if (!empty($_ENV['INSPECTOR_INGESTION_KEY'])) {
     );
 }
 
+// --- Agent introduction ---
+$response = $agent->stream(new UserMessage("Hi, let me know who you are, and how you can help me."));
+
+foreach ($response as $text) {
+    echo $text;
+}
+echo PHP_EOL.PHP_EOL;
+
+// --- Interactive console ---
 do {
     echo 'You: ';
     $input = \rtrim(\fgets(STDIN));
@@ -39,7 +48,7 @@ do {
 
     $response = $agent->stream(new UserMessage($input));
 
-    echo 'YouTube Agent: ';
+    echo 'Agent: ';
     foreach ($response as $text) {
         echo $text;
     }
