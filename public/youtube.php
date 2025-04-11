@@ -16,6 +16,16 @@ include __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+$agent = YouTubeAgent::make();
+
+if (!empty($_ENV['INSPECTOR_INGESTION_KEY'])) {
+    $agent->observe(
+        new \NeuronAI\Observability\AgentMonitoring(
+            new \Inspector\Inspector(new \Inspector\Configuration($_ENV['INSPECTOR_INGESTION_KEY'])),
+        )
+    );
+}
+
 do {
     echo 'You: ';
     $input = \rtrim(\fgets(STDIN));
@@ -24,7 +34,7 @@ do {
         break;
     }
 
-    $response = YouTubeAgent::make()->stream(new UserMessage($input));
+    $response = $agent->stream(new UserMessage($input));
 
     echo 'YouTube Agent: ';
     foreach ($response as $text) {
