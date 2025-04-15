@@ -12,7 +12,7 @@ use NeuronAI\Tools\ToolProperty;
 
 class YouTubeAgent extends Agent
 {
-    public function provider(): AIProviderInterface
+    protected function provider(): AIProviderInterface
     {
         return new Anthropic(
             $_ENV['ANTHROPIC_API_KEY'],
@@ -36,7 +36,7 @@ class YouTubeAgent extends Agent
         );
     }
 
-    public function tools(): array
+    protected function tools(): array
     {
         return [
             Tool::make(
