@@ -31,7 +31,7 @@ https://github.com/inspector-apm/neuron-ai/discussions
 Neuron is a fantastic PHP package that allows you to create full featured AI Agents in PHP in a few lines of code. 
 It definitively fills the gap for AI Agents development between PHP and other ecosystems like Python or Javascript.
 
-It provides you a standard toolkit to implement AI driven applications drastically reducing vendor lock-in. 
+It provides you with a standard toolkit to implement AI-driven applications drastically reducing vendor lock-in. 
 You can switch between LLMs, vector stores, embedding providers, etc. with just a few lines of code without the 
 need to refactor big portions of your application.
 
@@ -46,7 +46,7 @@ Here is the link to the documentation: https://docs.neuron-ai.dev
 # How to use this project
 
 Download the project on your machine, and open your terminal into the project directory.
-First install the composer dependencies:
+First, install the composer dependencies:
 
 ```
 composer install
@@ -66,6 +66,23 @@ To interact with the agent, you can just run the `youtube.php` script:
 ```
 php .\public\youtube.php
 ```
+
+# Agent Monitoring
+The Inspector team designed Neuron AI with built-in observability integration backed by [Inspector.dev](https://inspector.dev/), 
+so you can monitor AI agents were running for error detection and performance analysis. 
+Inspector helps you move your agents from prototype to production with confidence.
+
+To enable the Agent monitoring, you need to provide the Inspector ingestion key in the `.env` file. 
+You get a new key registering an account on the [Inspector](https://inspector.dev/) website.
+
+```dotenv
+INSPECTOR_INGESTION_KEY=m849w7g8xxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Now, when you run the agent you will be able to explore its internal execution flow in the Inspector dashboard, 
+and be alerted for unpredictable errors via email.
+
+![](https://inspector.dev/wp-content/uploads/2025/05/neuron-reranker-observability-1536x766.png)
 
 ## Inspector.dev
 [Inspector](https://supadata.ai) is a code execution monitoring tool for the PHP ecosystem.
