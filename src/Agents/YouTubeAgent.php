@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\YouTube;
+namespace App\Agents;
 
 use NeuronAI\Agent;
 use NeuronAI\Providers\AIProviderInterface;

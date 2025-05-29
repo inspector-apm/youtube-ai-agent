@@ -1,6 +1,6 @@
 <?php
 
-namespace App\YouTube;
+namespace App\Agents;
 
 use GuzzleHttp\Client;
 

@@ -8,7 +8,7 @@
  * https://www.youtube.com/watch?v=aoPcbZEFZZ0
  */
 
-use App\YouTube\YouTubeAgent;
+use App\Agents\YouTubeAgent;
 use Inspector\Configuration;
 use Inspector\Inspector;
 use NeuronAI\Chat\Messages\UserMessage;
