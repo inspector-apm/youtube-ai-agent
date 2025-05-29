@@ -95,5 +95,7 @@ https://docs.neuron-ai.dev/advanced/observability
 
 They provide 100 monthly API requests for free, and you can also retrieve the video transcriptions in many languages.
 
-## Full Article
-Here is the link to the article about this implementation: https://inspector.dev/php-ai-agent-summarizing-youtube-videos/
+## E-Book
+Start With AI Agents In PHP:
+
+- [Amazon](https://www.amazon.com/dp/B0F1YX8KJB)
