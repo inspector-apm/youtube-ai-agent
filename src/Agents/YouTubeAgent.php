@@ -7,6 +7,7 @@ use NeuronAI\Agent;
 use NeuronAI\Providers\AIProviderInterface;
 use NeuronAI\Providers\Anthropic\Anthropic;
 use NeuronAI\SystemPrompt;
+use NeuronAI\Tools\PropertyType;
 use NeuronAI\Tools\Tool;
 use NeuronAI\Tools\ToolProperty;
 
@@ -39,17 +40,7 @@ class YouTubeAgent extends Agent
     protected function tools(): array
     {
         return [
-            Tool::make(
-                'get_transcription',
-                'Retrieve the transcription of a youtube video.',
-            )->addProperty(
-                new ToolProperty(
-                    name: 'video_url',
-                    type: 'string',
-                    description: 'The URL of the YouTube video.',
-                    required: true
-                )
-            )->setCallable(new GetTranscription())
+            GetTranscription::make($_ENV['SUPADATA_API_KEY'])
         ];
     }
 }
