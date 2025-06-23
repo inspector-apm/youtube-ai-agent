@@ -40,7 +40,7 @@ class YouTubeAgent extends Agent
     protected function tools(): array
     {
         return [
-            GetTranscription::make($_ENV['SUPADATA_API_KEY'])
+            GetTranscriptionTool::make($_ENV['SUPADATA_API_KEY'])
         ];
     }
 }
