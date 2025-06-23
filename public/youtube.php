@@ -1,18 +1,12 @@
 <?php
 
 /*
- * https://www.youtube.com/watch?v=6qmWm18ewCo
+ * Example video
  *
- * https://www.youtube.com/watch?v=WmVLcj-XKnM
- *
- * https://www.youtube.com/watch?v=aoPcbZEFZZ0
+ * https://www.youtube.com/watch?v=fJSX8wWIDO8
  */
-
 use App\Agents\YouTubeAgent;
-use Inspector\Configuration;
-use Inspector\Inspector;
 use NeuronAI\Chat\Messages\UserMessage;
-use NeuronAI\Observability\AgentMonitoring;
 
 include __DIR__ . '/../vendor/autoload.php';
 
@@ -20,14 +14,6 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/..');
 $dotenv->load();
 
 $agent = YouTubeAgent::make();
-
-if (!empty($_ENV['INSPECTOR_INGESTION_KEY'])) {
-    $agent->observe(
-        new AgentMonitoring(
-            new Inspector(new Configuration($_ENV['INSPECTOR_INGESTION_KEY'])),
-        )
-    );
-}
 
 // --- Agent introduction ---
 $response = $agent->stream(new UserMessage("Hi, let me know who you are, and how you can help me."));
