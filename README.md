@@ -99,3 +99,4 @@ They provide 100 monthly API requests for free, and you can also retrieve the vi
 Start With AI Agents In PHP:
 
 - [Amazon](https://www.amazon.com/dp/B0F1YX8KJB)
+- [Google Play](https://play.google.com/store/books/details?pcampaignid=books_read_action&id=agJPEQAAQBAJ&pli=1)
