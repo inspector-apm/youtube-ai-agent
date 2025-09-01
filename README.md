@@ -27,21 +27,18 @@ Creators and media professionals can use this Agent to:
 Just give you some inspiration. You can eventually share your implementation of the Neuron AI forum: 
 https://github.com/inspector-apm/neuron-ai/discussions
 
-# Introducing the Neuron AI PHP framework
-Neuron is a fantastic PHP package that allows you to create full-featured AI Agents in PHP in a few lines of code. 
+# NeuronAI PHP framework
+Neuron is an agentic framework that allows you to create full-featured AI Agents in PHP. 
 It definitively fills the gap for AI Agents development between PHP and other ecosystems like Python or Javascript.
 
 It provides you with a standard toolkit to implement AI-driven applications drastically reducing vendor lock-in. 
 You can switch between LLMs, vector stores, embedding providers, etc. with just a few lines of code without the 
 need to refactor big portions of your application.
 
-Also, being able to encapsulate the full implementation of the Agent into a single class makes it so easy 
-to add AI features within your existing PHP application.
-
 If you are new to AI Agents development, or you already have experience, Neuron can be the perfect playground 
-to move your idea from experiments to extensive production implementations.
+to move your idea from experiments to reliable production implementations.
 
-Here is the link to the documentation: https://docs.neuron-ai.dev
+Checkout the documentation: https://docs.neuron-ai.dev
 
 # How to use this project
 
