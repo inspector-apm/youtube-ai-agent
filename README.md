@@ -53,8 +53,11 @@ Rename the `.env.example` into `.env` and provide the script with the Anthropic 
 and the [Inspector](https://inspector.dev) ingestion key if you want to monitor the agent execution:
 
 ```dotenv
+# Required
 ANTHROPIC_API_KEY=
 SUPADATA_API_KEY=
+
+# Optional
 INSPECTOR_INGESTION_KEY=
 ```
 
@@ -64,7 +67,7 @@ To interact with the agent, you can just run the `youtube.php` script:
 php .\public\youtube.php
 ```
 
-# Agent Monitoring
+# Monitoring & Debugging
 The Inspector team designed Neuron AI with built-in observability integration backed by [Inspector.dev](https://inspector.dev/), 
 so you can monitor AI agents were running for error detection and performance analysis. 
 Inspector helps you move your agents from prototype to production with confidence.
